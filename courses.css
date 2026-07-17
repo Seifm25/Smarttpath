@@ -1,0 +1,250 @@
+
+.navbar {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  /* top: 0;
+  left: 0;
+  right: 0; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:5px 30px;
+  /* background: linear-gradient(to left, #000000, #4f46e5); */
+  transition: var(--transition);
+  /* z-index: 1000; */
+  border-bottom: 1px solid rgba(50, 25, 66, 0.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.02);
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  animation: logoIn 0.9s cubic-bezier(0.25, 0.8, 0.25, 1) both;
+}
+
+.logo img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid var(--blue);
+  transition: var(--transition);
+}
+
+.logo img:hover {
+  transform: scale(1.12) rotate(6deg);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.4);
+  border-color: var(--dark-blue);
+}
+
+@keyframes logoIn {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.nav-links {
+  display: flex;
+  gap: 36px;
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #321942;
+  font-weight: 600;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  width: 0;
+  height: 2.5px;
+  background: var(--blue);
+  border-radius: 2px;
+  transition: width 0.35s ease, left 0.35s ease;
+}
+
+.nav-links a:hover {
+  color: var(--blue);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--blue), var(--dark-blue));
+  color: var(--white);
+  box-shadow: 0 8px 20px rgba(99, 102, 241, 0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 14px 25px rgba(99, 102, 241, 0.45);
+}
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+.courses{
+  padding: 20px;
+}
+.titleCourses{
+  font-size: 40px;
+  color: #321942;
+}
+.describtion{
+  font-size: 22px;
+  color: #321942;
+}
+.titlelevel{
+  font-size:30px ;
+  color: #321942;
+  font-weight: 700;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 1px;
+  border-bottom:2px solid #321942;
+  display: inline-block;
+}
+.tl{
+  padding-left: 30px;
+}
+.course {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  justify-content:flex-start;
+  row-gap: 50px;
+  column-gap: 70px;
+  margin:10px 40px ;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: rgb(112, 73, 134, 0.3) 0px 2px 8px 0px;
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+.card:hover .overlay {
+  transform: translateY(-15px);
+  bottom: 0; 
+}
+.card:hover .content{
+  filter: blur(3px);
+  transition: .4s ease;
+}
+.Photo {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin: 5px auto;
+  border-radius: 30%;
+}
+.level{
+  display:flex;
+  padding: 0 25px;
+  gap: 190px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.lvl{
+  width: 100px;
+  background-color: #F4F1FF;
+  border-radius:10% ;
+  padding: 3px;
+}
+.rate{
+  padding: 3px;
+}
+.titleCard {
+  font-size: 30px;
+  color: #321942;
+  text-align:left;
+  padding: 0 20px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+.dr {
+  font-size: 20px;
+  color: #321942;
+  text-align:left;
+  padding: 0 25px ;
+  margin-top: 0;
+
+}
+.overlay{
+    position: absolute;
+    bottom: -100px;         
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: #F4F1FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s ease;
+}
+.overlay a{
+    color: #321942;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.line {
+  width: 100%;
+  margin-top: 100px;
+  border-top: 1px solid #704986;
+}
+.end {
+  color: #321942;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.socialIcon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.ficon {
+  width: 25px;
+}
