@@ -118,12 +118,22 @@ color: white;
   font-weight: 600;
   display: block;
   margin-bottom: 8px;
+  color:#ae00ffcf;
+}
+.footer-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background-color: #ae00ffcf;
+  margin: 6px auto 0;
 }
 
 .footer-center h2 {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 650;
   margin: 0;
+  color:#ae00ffcf;
 }
 
 .social-icons {
