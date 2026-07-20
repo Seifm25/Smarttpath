@@ -103,8 +103,8 @@ color: white;
 }
 
 .logo-circle {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   border: 2px solid #d4ff00ac; 
   background: rgba(255, 255, 255, 0.05);
@@ -114,6 +114,7 @@ color: white;
   box-shadow: 0 0 15px rgba(174, 0, 255, 0.4); 
   overflow: hidden;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 12px;
 }
 
 .logo-circle:hover {
