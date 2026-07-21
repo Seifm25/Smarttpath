@@ -47,7 +47,7 @@ body {
   grid-template-columns: repeat(3,1fr);
   justify-content:flex-start;
   row-gap: 50px;
-  column-gap: 70px;
+  column-gap: 100px;
   margin:10px 40px ;
 }
 .card {
@@ -72,7 +72,7 @@ body {
 }
 .Photo {
   display: block;
-  width: 350px;
+  width: 300px;
   height: auto;
   margin: 5px auto 15px auto;
   border-radius: 20px;
