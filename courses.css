@@ -19,7 +19,7 @@ body {
 }
 
 .courses{
-  padding: 20px;
+  padding: 50px;
 }
 .titleCourses{
   font-size: 40px;
@@ -33,22 +33,22 @@ body {
   font-size:30px ;
   color: white;
   font-weight: 700;
-  padding-left: 10px;
+  /* padding-left: 30px; */
   padding-bottom: 10px;
   letter-spacing: 1px;
   border-bottom:2px solid white;
   display: inline-block;
 }
 .tl{
-  padding-left: 30px;
+  padding-left: 45px;
 }
 .course {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   justify-content:flex-start;
   row-gap: 50px;
-  column-gap: 70px;
-  margin:10px 40px ;
+  column-gap: 90px;
+  margin:20px 90px ;
 }
 .card {
   position: relative;
@@ -72,15 +72,31 @@ body {
 }
 .Photo {
   display: block;
-  width: 350px;
+  width: 300px;
   height: auto;
   margin: 5px auto 15px auto;
   border-radius: 20px;
 }
-.level{
+.levelB{
   display:flex;
   padding: 0 25px;
-  gap: 190px;
+  gap: 150px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.levelI{
+  display:flex;
+  padding: 0 25px;
+  gap: 110px;
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+.levelA{
+  display:flex;
+  padding: 0 25px;
+  gap: 130px;
   margin-top: 0;
   margin-bottom: 5px;
   font-size: 20px;
@@ -99,14 +115,14 @@ body {
   color: white;
   text-align:left;
   padding: 0 20px;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
   margin-top: 0;
 }
 .dr {
   font-size: 20px;
   color: white;
   text-align:left;
-  padding: 0 25px ;
+  /* padding: 0 20px ; */
   margin-top: 0;
 
 }
@@ -116,7 +132,7 @@ body {
     left: 0;
     width: 100%;
     height: 100px;
-    background:rgba(104, 77, 130, 0.39);
+    background:rgba(92, 68, 114, 0.8);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,6 +144,155 @@ body {
     font-size: 25px;
     font-weight: 600;
 }
+
+
+
+@media (max-width: 1200px) {
+  .course {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 40px;
+    margin: 20px 50px;
+  }
+
+  .Photo {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .levelB,
+  .levelI,
+  .levelA {
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .courses {
+    padding: 30px 20px;
+  }
+
+  .titleCourses {
+    font-size: 32px;
+  }
+
+  .describtion {
+    font-size: 18px;
+  }
+
+  .titlelevel {
+    font-size: 26px;
+  }
+
+  .tl {
+    padding-left: 10px;
+  }
+
+  .course {
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    max-width: 500px;
+    row-gap: 35px;
+  }
+
+  .card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .Photo {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .levelB,
+  .levelI,
+  .levelA {
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 20px;
+    font-size: 18px;
+  }
+
+  .titleCard {
+    font-size: 23px;
+  }
+
+  .dr {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .courses {
+    padding: 25px 15px;
+  }
+
+  .titleCourses {
+    font-size: 28px;
+  }
+
+  .describtion {
+    font-size: 16px;
+  }
+
+  .titlelevel {
+    font-size: 23px;
+  }
+
+  .course {
+    width: 100%;
+    margin: 20px auto;
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 15px 10px;
+    border-radius: 12px;
+  }
+
+  .Photo {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .levelB,
+  .levelI,
+  .levelA {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .titleCard {
+    font-size: 20px;
+    padding: 0 15px;
+  }
+
+  .dr {
+    font-size: 16px;
+    padding: 0 15px;
+  }
+
+  .overlay {
+    height: 80px;
+    bottom: -80px;
+  }
+
+  .overlay a {
+    font-size: 20px;
+  }
+}
+
+
+
+
+
+
+
+
 
 
 /*footer*/
