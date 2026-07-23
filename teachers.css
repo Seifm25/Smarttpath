@@ -617,4 +617,9 @@ hr:hover {
     .footer-bottom span {
         font-size: 11px;
     }
+    body{background-image: url(background.jpeg);
+background-size: cover;
+background-position: center0;
+background-repeat: no-repeat;
+    transition: background-image 1.5s ease;}
 }
